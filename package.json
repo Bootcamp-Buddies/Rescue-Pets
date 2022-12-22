@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint --ignore-path .gitignore --fix",
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "prepare": "husky install"
@@ -22,9 +22,18 @@
     "husky": "^8.0.2",
     "mysql2": "^2.2.5",
     "path": "^0.12.7",
+    "prettier": "^2.8.1",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
     "husky": "^8.0.0"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+ }
 }
