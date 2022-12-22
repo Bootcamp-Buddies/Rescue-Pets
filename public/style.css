@@ -1,0 +1,20 @@
+.navbar{
+    padding-left: 2vw;
+}
+
+.form-inline{
+    display: flex;
+    margin-right: 2vw;
+}
+
+.form-control{
+    margin-right: 2vw;
+}
+
+#banner{
+    margin-bottom:30px;
+    height: 50vh;
+    width: 100%;
+    background: url('./images/catdog.webp') no-repeat center;
+    background-size: cover;
+}
