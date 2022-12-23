@@ -10,7 +10,6 @@ router.get('/', async (req, res) => {
       include: [User]
     });
     const pets = petsData.map((pet) => pet.get({ plain: true }));
-    res.status(200).json(pets);
     res.render('homepage', { pets, loggedIn: req.session.loggedIn});
   } catch (err) {
     res.status(500).json(err);

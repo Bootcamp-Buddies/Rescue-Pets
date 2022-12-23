@@ -15,15 +15,31 @@ Pets.init(
       type: DataTypes.TEXT,
       allowNull: false
     },
-    pet_type: {
+    type: {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    pet_gender: {
+    breed: {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    pet_description: {
+    gender: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    age: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    traits: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    favorite_game: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    description: {
       type: DataTypes.TEXT,
       allowNull: false
     },
