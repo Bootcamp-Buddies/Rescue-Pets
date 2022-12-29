@@ -6,6 +6,23 @@ body {
   padding-left: 2vw;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: #0dcaf0;
+  color: black;
+}
+
+.nav-link {
+  color: white;
+}
+
 .form-inline {
   display: flex;
   margin-right: 2vw;
@@ -43,9 +60,6 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-  a {
-    display: none;
-  }
 
   .card-body {
     padding: 0.5em 1.2em;
@@ -57,6 +71,10 @@ body {
 
   .card img {
     width: 50%;
+  }
+
+  .fw-bold {
+    font-weight: 525 !important;
   }
 }
 
@@ -74,10 +92,10 @@ body {
   background-position: right center;
   background-size: auto 100%;
 }
+
 /* 
 @media (min-width: 1025px) {
   .h-custom-2 {
     height: 100%;
   }
 } */
-
