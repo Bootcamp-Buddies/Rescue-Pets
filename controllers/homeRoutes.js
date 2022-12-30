@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Pets, User } = require('../models/');
+const { Pets, User } = require('../models');
 
 // Get all unadopted pets data to display on / homepage - route to homepage
 router.get('/', async (req, res) => {
