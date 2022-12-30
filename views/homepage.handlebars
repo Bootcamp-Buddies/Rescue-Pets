@@ -1,0 +1,15 @@
+<!-- Loop over each object in the projects array -->
+{{#each pets as |pet| }}
+
+<div class="card btn btn-info">
+    <a href="/pet/{{pet.id}}"></a>
+    <img src="./images/catdog.webp" class="card-img-top" />
+    <div class="card-body">
+        <h5 class="card-title">{{{get_emoji}}} {{pet.name}}</h5>
+        <p class="card-text">
+            Meet {{pet.pet_name}}! It is {{pet.age}} old. It is {{pet.breed}}. Traits: {{pet.traits}}. Favorite game: {{favorite_game}}.
+        </p>
+        <p>Created by {{user.name}} on {{format_date user.date_created}}</p>
+    </div>
+</div>
+{{/each}}
