@@ -93,6 +93,21 @@ body {
   background-size: auto 100%;
 }
 
+.about-section{
+  color: white;
+  text-align: center;
+  margin: 5vw 10vw 5vw 10vw;
+}
+
+.header{
+  color:#0dcaf0;
+  margin: 2vw;
+}
+
+.paragraph{
+  text-align: left;
+}
+
 /* 
 @media (min-width: 1025px) {
   .h-custom-2 {
