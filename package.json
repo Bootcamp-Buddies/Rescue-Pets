@@ -6,6 +6,7 @@
   "scripts": {
     "test": "eslint --ignore-path .gitignore --fix",
     "start": "node server.js",
+    "watch": "nodemon server.js",
     "seed": "node seeds/seed.js",
     "prepare": "husky install"
   },
@@ -21,6 +22,7 @@
     "express-session": "^1.17.1",
     "husky": "^8.0.2",
     "mysql2": "^2.2.5",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7",
     "prettier": "^2.8.1",
     "sequelize": "^6.3.5"
@@ -35,5 +37,5 @@
     "hooks": {
       "pre-commit": "npm run test"
     }
- }
+  }
 }

@@ -20,13 +20,13 @@ router.get('/', async (req, res) => {
 });
 
 // Route for log in page
-router.get('/login', (req, res) => {
+router.get('/signin', (req, res) => {
   // If a session exists, redirect the request to the homepage
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
-  res.render('login');
+  res.render('signin');
 });
 
 // Route for sign up page
@@ -37,6 +37,15 @@ router.get('/signup', (req, res)=> {
     console.log(err);
     res.status(500).json(err);
   }
+});
+
+router.get('/about', (req, res) => {
+  // If a session exists, redirect the request to the homepage
+  if (req.session.logged_in) {
+    res.redirect('/about');
+    return;
+  }
+  res.render('about');
 });
 
 // Route for a single clicked pet

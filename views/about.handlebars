@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-shield-dog"></i> Rescue Pets</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About Pet Adoption</a>
+            </li>
+            <li class="nav-item">
+                {{#if logged_in}}
+                <a class="nav-link" href="/profile">My Profile</a>
+                <a class="nav-link" href="/signout">Sign Out</a>
+                <a class="nav-link" href="/favorites">Favorites</a>
+                {{else}}
+                <a class="nav-link" href="/signin">Sign In</a>
+            <li>
+                <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+            {{/if}}
+            </li>
+        </ul>
+    </div>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search for pets"
+            aria-label="Search">
+        <button class="btn btn-primary my-2 btn-info" type="submit">Search</button>
+    </form>
+</nav>
+
+<div id="banner"></div>
+
+<div class="about-section">
+    <h1 class="header">About Pet Adoption</h1>
+    <p class="paragraph">Pet adoption is the process of transferring responsibility for a pet that was previously owned
+        by another party
+        such as a person, shelter, or rescue organization. Common sources for adoptable pets are animal shelters and
+        rescue groups. Some organizations give adopters ownership of the pet, while others use a guardianship model
+        wherein the organization retains some control over the animal's future use or care.
+    </p>
+
+    <p class="paragraph">
+        Online pet adoption sites have databases of pets being housed by thousands of animal shelters and rescue groups,
+        and are searchable by the public.
+    </p>
+
+    <p class="paragraph">
+        A black cat waiting to be adopted. Because of the superstitions surrounding black cats, they are
+        disproportionately more common in shelters than in the general population and less likely to be adopted than are
+        cats of other colors.
+        People deal with their unwanted pets in many ways. Some people have the pet euthanized (also known as putting
+        down or putting to sleep), although many veterinarians do not consider this to be an ethical use of their
+        resources for young and healthy animals, while others argue that euthanasia is a more humane option than leaving
+        a pet in a cage for very long periods of time. Other people simply release the pet into the wild or otherwise
+        abandon it, with the expectation that it will be able to take care of itself or that it will be found and
+        adopted. More often, these pets succumb to hunger, weather, traffic, or common and treatable health problems.
+        Some people euthanize pets because of terminal illnesses or injuries, while others even do it for common health
+        problems that they cannot, or will not, pay to treat. More responsible owners will take the pet to a shelter, or
+        call a rescue organization, where it will be cared for properly until a home can be found. Another method is
+        rehoming (finding another owner). Reasons for surrendering a pet may be due to allergies, the pet-owner's death,
+        divorce, the birth of a baby, or relocation.
+
+    </p>
+
+    <p class="paragraph">
+        Homes cannot always be found, however, and euthanasia is often used for the excess animals to make room for
+        newer pets, unless the organization has a no-kill policy. The Humane Society of the United States estimates that
+        2.4 million healthy, adoptable cats and dogs are euthanized each year in the US because of a lack of homes.
+        Animal protection advocates campaign for adoption instead of buying animals in order to reduce the number of
+        animals who have to be euthanized. Many shelters and animal rescues encourage the education of spaying or
+        neutering a pet in order to reduce the number of animals euthanized in shelters and to help control the pet
+        population.
+
+    </p>
+
+    <p class="paragraph">
+        To help lower the number of animals euthanized each year, some shelters have developed a no-kill policy. Best
+        Friends Animal Society is the largest no-kill shelter in the United States who adopts policies such as "Save
+        Them All". Like this shelter and many others, they strive to keep their animals as long as it takes to find
+        them new homes. City shelters and government funded shelters rarely have this policy because of the large number
+        of animals they receive. No-kill shelters are usually run by groups that have volunteers or individuals with
+        enough space to foster pets until a permanent home can be found. However, many of these groups and individuals
+        have a finite number of spaces available. This means they will not take in new animals unless a space opens up,
+        although they will often take back pets that they have adopted out previously. Sometimes they try to find the
+        animals foster homes, in which the animal is placed in a home temporarily until someone adopts it.</p>
+</div>
