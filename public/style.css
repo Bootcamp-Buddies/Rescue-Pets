@@ -1,5 +1,6 @@
 body {
   background-color: #212529;
+  color: white;
 }
 
 .navbar {
@@ -93,20 +94,70 @@ body {
   background-size: auto 100%;
 }
 
-.about-section{
+.about-section {
   color: white;
   text-align: center;
   margin: 5vw 10vw 5vw 10vw;
 }
 
-.header{
-  color:#0dcaf0;
+.header {
+  color: #0dcaf0;
   margin: 2vw;
 }
 
-.paragraph{
+.paragraph {
   text-align: left;
 }
+
+.avatar {
+  width: 18vw;
+  left: -0.2vw;
+  top: -13vw;
+  position: relative;
+}
+
+.banner-and-avatar {
+  text-align: center;
+  height: 55vh;
+}
+
+.add-pet-section {
+  margin: 5vw;
+  padding-right: 5vw;
+  width: 45.2vw;
+  border-right: 0.5vw solid;
+}
+
+.pet-list-section {
+  margin: 5vw 0vw 5vw 0vw;
+  padding-right: 5vw;
+  width: 45.2vw;
+}
+
+.profile-section {
+  display: flex;
+}
+
+.footer {
+  text-align: center;
+}
+
+.fa-paw:before {
+  content: "\f1b0";
+  position: relative;
+  top: -3vh;
+  font-size: x-large;
+}
+
+.description {
+  height: 15vh;
+}
+
+
+
+/* .form-select{
+  margin: 1vw 0vw 1vw 0vw;
+} */
 
 /* 
 @media (min-width: 1025px) {
