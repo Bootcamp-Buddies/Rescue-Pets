@@ -12,13 +12,12 @@ router.get('/', withAuth, async (req, res) => {
       attributes: [
         'id',
         'pet_name',
-        'type',
-        'breed',
-        'gender',
         'age',
-        'traits',
-        'favorite_game',
-        'description'
+        'breed',
+        'type',
+        'gender',
+        'description',
+        'user_id'
       ],
       include: [
         {
