@@ -13,11 +13,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-
 // Configure and link a session object with the sequelize store
 const sess = {
-  secret: 'So sad to say',
-  cookie: { maxAge: null },
+  secret: 'Super secret secret',
+  cookie: { maxAge: 30000 }, // 30 seconds 3600000 // 1 hour
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -29,7 +28,6 @@ const sess = {
 app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
-
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
