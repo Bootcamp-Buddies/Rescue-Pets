@@ -12,13 +12,12 @@ router.get('/', withAuth, async (req, res) => {
       attributes: [
         'id',
         'pet_name',
-        'type',
-        'breed',
-        'gender',
         'age',
-        'traits',
-        'favorite_game',
-        'description'
+        'breed',
+        'type',
+        'gender',
+        'description',
+        'user_id'
       ],
       include: [
         {
@@ -28,7 +27,7 @@ router.get('/', withAuth, async (req, res) => {
       ]
     });
     const pets = dbPetData.map((pet) => pet.get({ plain: true}));
-    res.render('dashboard', {
+    res.render('profile', {
       pets,
       logged_in: req.session.logged_in,
       username: req.session.username
