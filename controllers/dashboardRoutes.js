@@ -28,7 +28,7 @@ router.get('/', withAuth, async (req, res) => {
       ]
     });
     const pets = dbPetData.map((pet) => pet.get({ plain: true}));
-    res.render('dashboard', {
+    res.render('profile', {
       pets,
       logged_in: req.session.logged_in,
       username: req.session.username
