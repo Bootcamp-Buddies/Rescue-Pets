@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Rescue Pets</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-shield-dog"></i> Rescue Pets</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Pet Adoption</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Favorites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search for pets"
+                aria-label="Search">
+            <button class="btn btn-primary my-2 btn-info" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="banner-and-avatar">
+        <div id="banner"></div>
+        <img class="avatar" src="./images/avatar.png" alt="Avatar">
+    </div>
+
+    <div class="profile-section">
+
+        <div class="add-pet-section">
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Add Pet</h3>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="name-signup">Pet Name:</label>
+                <input type="name" id="name-signup" class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="age-signup">Age:</label>
+                <input type="age" id="age-signup" class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="breed-signup">Breed:</label>
+                <input type="breed" id="breed-signup" class="form-control form-control-lg" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label">Type:</label>
+                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                    <option selected>Select</option>
+                    <option value="1">Dog &#128021<i class="fas fa-dog"></i></option>
+                    <option value="2">Cat &#128008<i class="fa-solid fa-cat"></i></option>
+                </select>
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label">Gender:</label>
+                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                    <option selected>Select</option>
+                    <option value="1">Male &#9794<i class="fa-solid fa-mars"></i></option>
+                    <option value="2">Female &#9792<i class="fa-solid fa-venus"></i></option>
+                </select>
+            </div>
+
+            <div class="form-outline mb-4">
+                <div class="form-outline mb-4">
+                    <label class="form-label">Description:</label>
+                    <input type="description" class="description form-control form-control-lg" />
+                </div>
+            </div>
+
+            <div class="pt-1 mb-4">
+                <button class="btn btn-primary my-2 btn-info" type="submit">Add Pet</button>
+            </div>
+        </div>
+
+        <div class="pet-list-section">
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Pet List</h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="footer"><i class="fa-solid fa-paw"></i></p>
+    </footer>
+
+</body>
+
+</html>
