@@ -1,36 +1,3 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"><i class="fa-solid fa-shield-dog"></i> Rescue Pets</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About Pet Adoption</a>
-            </li>
-            <li class="nav-item">
-                {{#if logged_in}}
-                <a class="nav-link" href="/profile">My Profile</a>
-                <a class="nav-link" href="/signout">Sign Out</a>
-                <a class="nav-link" href="/favorites">Favorites</a>
-                {{else}}
-                <a class="nav-link" href="/signin">Sign In</a>
-            <li>
-                <a class="nav-link" href="/signup">Sign Up</a>
-            </li>
-            {{/if}}
-            </li>
-        </ul>
-    </div>
-
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search for pets"
-            aria-label="Search">
-        <button class="btn btn-primary my-2 btn-info" type="submit">Search</button>
-    </form>
-</nav>
-
 <div id="banner"></div>
 
 <div class="about-section">

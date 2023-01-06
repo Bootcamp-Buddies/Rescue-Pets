@@ -41,10 +41,10 @@ router.get('/signup', (req, res)=> {
 
 router.get('/about', (req, res) => {
   // If a session exists, redirect the request to the homepage
-  if (req.session.logged_in) {
-    res.redirect('/about');
-    return;
-  }
+  // if (req.session.logged_in) {
+  //   res.render('about');
+  //   return;
+  // }
   res.render('about');
 });
 
