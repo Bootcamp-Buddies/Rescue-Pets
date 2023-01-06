@@ -89,7 +89,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 // Update a specific pet
-router.put('/:id', async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
   try {
     const dbPetData = await Pets.update(req.body, {
       where: {
@@ -103,7 +103,7 @@ router.put('/:id', async (req, res) => {
 });
 
 // Update (adopt) a specific pet
-router.put('/:id', async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
   try {
     const dbPetData = await Pets.update({
       user_id: req.session.user_id
