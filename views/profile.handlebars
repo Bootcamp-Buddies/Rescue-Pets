@@ -3,62 +3,83 @@
         <img class="avatar" src="./images/avatar.png" alt="Avatar">
     </div>
 
-    <div class="profile-section">
+<div class="profile-section">
 
-        <div class="add-pet-section">
-            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Add Pet</h3>
+    <div class="add-pet-section">
+        <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Add Pet</h3>
 
+        <div class="form-outline mb-4">
+            <label class="form-label" for="name-signup">Pet Name:</label>
+            <input type="name" id="name-signup" class="form-control form-control-lg" />
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="age-signup">Age:</label>
+            <input type="age" id="age-signup" class="form-control form-control-lg" />
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="breed-signup">Breed:</label>
+            <input type="breed" id="breed-signup" class="form-control form-control-lg" />
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label">Type:</label>
+            <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                <option selected>Select</option>
+                <option value="1">Dog &#128021<i class="fas fa-dog"></i></option>
+                <option value="2">Cat &#128008<i class="fa-solid fa-cat"></i></option>
+            </select>
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label">Gender:</label>
+            <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                <option selected>Select</option>
+                <option value="1">Male &#9794<i class="fa-solid fa-mars"></i></option>
+                <option value="2">Female &#9792<i class="fa-solid fa-venus"></i></option>
+            </select>
+        </div>
+
+        <div class="form-outline mb-4">
             <div class="form-outline mb-4">
-                <label class="form-label" for="name-signup">Pet Name:</label>
-                <input type="name" id="name-signup" class="form-control form-control-lg" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label" for="age-signup">Age:</label>
-                <input type="age" id="age-signup" class="form-control form-control-lg" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label" for="breed-signup">Breed:</label>
-                <input type="breed" id="breed-signup" class="form-control form-control-lg" />
-            </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label">Type:</label>
-                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
-                    <option selected>Select</option>
-                    <option value="1">Dog &#128021<i class="fas fa-dog"></i></option>
-                    <option value="2">Cat &#128008<i class="fa-solid fa-cat"></i></option>
-                </select>
-            </div>
-
-            <div class="form-outline mb-4">
-                <label class="form-label">Gender:</label>
-                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
-                    <option selected>Select</option>
-                    <option value="1">Male &#9794<i class="fa-solid fa-mars"></i></option>
-                    <option value="2">Female &#9792<i class="fa-solid fa-venus"></i></option>
-                </select>
-            </div>
-
-            <div class="form-outline mb-4">
-                <div class="form-outline mb-4">
-                    <label class="form-label">Description:</label>
-                    <input type="description" class="description form-control form-control-lg" />
-                </div>
-            </div>
-
-            <div class="pt-1 mb-4">
-                <button class="btn btn-primary my-2 btn-info" type="submit">Add Pet</button>
+                <label class="form-label">Description:</label>
+                <input type="description" class="description form-control form-control-lg" />
             </div>
         </div>
 
-        <div class="pet-list-section">
-            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Pet List</h3>
+        <div class="pt-1 mb-4">
+            <button class="btn btn-primary my-2 btn-info" type="submit">Add Pet</button>
         </div>
-
     </div>
 
-    <footer>
-        <p class="footer"><i class="fa-solid fa-paw"></i></p>
-    </footer>
+    <div class="pet-list pet-list-section">
+        <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Pet List</h3>
+    </div>
+
+</div>
+
+<footer>
+    <p class="footer"><i class="fa-solid fa-paw"></i></p>
+</footer>
+
+{{#if pets.length}}
+<div class="pet-list pet-list-section">
+    <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Pet List</h3>
+</div>
+
+{{#each pets as |pet|}}
+<div class="row mb-2">
+    <div class="col-md-8">
+        <h4><a href="/pet/{{pet.id}}">{{pet.pet_name}}</a></h4>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{pet.id}}">Delete</button>
+    </div>
+</div>
+{{/each}}
+</div>
+{{/if}}
+</div>
+
+<script src="/js/profile.js"></script>
