@@ -75,7 +75,7 @@ body {
   }
 
   .fw-bold {
-    font-weight: 525 !important;
+    display: flex;
   }
 }
 
