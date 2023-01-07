@@ -13,8 +13,6 @@ router.get('/', withAuth, async (req, res) => {
         'breed',
         'gender',
         'age',
-        'traits',
-        'favorite_game',
         'description',
         'user_id'
       ],
@@ -47,8 +45,6 @@ router.get('/:id', withAuth, async (req, res) => {
         'breed',
         'gender',
         'age',
-        'traits',
-        'favorite_game',
         'description',
         'user_id'
       ],
@@ -71,16 +67,14 @@ router.get('/:id', withAuth, async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
   try {
     const dbPetData = await Pets.create({
-      pet_name: req.body.pet_name,
-      type: req.body.type,
-      breed: req.body.breed,
-      gender:req.body.gender,
-      age: req.body.age,
-      traits: req.body.traits,
-      favorite_game: req.body.favorite_game,
-      description: req.body.description,
+      pet_name: req.body.petName,
+      age: req.body.petAge,
+      breed: req.body.petBreed,
+      type: req.body.petType,
+      gender:req.body.petGender,
+      description: req.body.petDescription,
       // need way to claim yours or add as adoptable in pages/form
-      user_id: req.session.req.session.user_id
+      // user_id: req.session.req.session.user_id
     });
     res.status(200).json({ dbPetData, message: 'New Pet Created'});
   } catch (err) {
