@@ -1,0 +1,65 @@
+[
+  {
+    "user_id": 1,
+    "pet_name": "Oscar",
+    "age": "4 months",
+    "breed": "Golden Retriever",
+    "type": "Dog",
+    "gender": "Male",
+    "description": "Meet Oscar! 4 months old Golden Retriever. Playful, friendly, outgoing. Favorite game; fetch."
+  },
+  {
+    "user_id": 2,
+    "pet_name": "Mia",
+    "age": "1 year",
+    "breed": "British Shorthair",
+    "type": "Cat",
+    "gender": "Female",
+    "description": "Meet Mia! 1 year old British Shorthair. Calm, easygoing. Favorite game; catching fish on the tablet."
+  },
+  {
+    "user_id": 3,
+    "pet_name": "Murphy",
+    "age": "7 months",
+    "breed": "German Shephard",
+    "type": "Dog",
+    "gender": "Male",
+    "description": "Meet Murphy! 7 months old German Shephard. Energetic, intelligent. Favorite game; swimming."
+  },{
+    "user_id": 4,
+    "pet_name": "Buster",
+    "age": "3 years",
+    "breed": "Maine Coon",
+    "type": "Cat",
+    "gender": "Male",
+    "description": "Meet Buster! 3 years old Maine Coon. Social, talkative. Favorite game; playing with toilet paper roll."
+  },{
+    "pet_name": "Sully",
+    "age": "13 years",
+    "breed": "Boxer Mix",
+    "type": "Dog",
+    "gender": "Male",
+    "description": "Sully is an older dog, but one of the goodest boys. Calm and quiet, looking for a new home"
+  },{
+    "pet_name": "Sinatra",
+    "age": "2 years",
+    "breed": "Siamese",
+    "type": "Cat",
+    "gender": "Male",
+    "description": "Playful and energetic, Sinatra will be a great addition to your home. Loves to play fetch with crinkly toys."
+  },{
+    "pet_name": "Shooter",
+    "age": "6 years",
+    "breed": "Ragdoll",
+    "type": "Cat",
+    "gender": "Female",
+    "description": "This is Shooter, a cat with attitude and spunk. Does best as an only animal, loves all people."
+  },{
+    "pet_name": "Fynn",
+    "age": "4 years",
+    "breed": "Greyhound",
+    "type": "Dog",
+    "gender": "Male",
+    "description": "Fynn is a big dog, but thinks he is a lap dog. Friendly and playful he loves going on walks and runs."
+  }
+]
