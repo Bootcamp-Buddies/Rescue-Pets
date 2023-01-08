@@ -1,11 +1,5 @@
-<div class="text-center">
-    <p>{{{get_emoji}}}</p>
-    <h2>{{petName}}</h2>
-    <h2>{{petAge}}</h2>
-    <h2>{{petBreed}}</h2>
-    <p>{{petDescription}}</p>
-    <p>Created by {{user.username}} on {{format_date date_created}}</p>
-    <p>
-        <button class="btn btn-primary">Add To Favorites</button>
-    </p>
-</div>
+<div id="banner"></div>
+
+<ul class="pet-list">
+    {{> pets-list-single pet}}
+</ul>
