@@ -18,6 +18,36 @@
 
 ## Installation
 
+**1. Clone to ***your computer*** using SSH from GitHub:**
+```
+git clone https://github.com/Bootcamp-Buddies/Rescue-Pets
+```
+**2. You'll need to run to install the node required dependencies after you clone the install by running:**
+```
+npm install
+```
+**3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:**
+```
+DB_NAME='techblog_db'
+DB_USER=''
+DB_PASSWORD=''
+```
+**4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:**
+```
+- mysql -u root -p
+- <enter password>
+- SOURCE db/schema.sql
+```
+**5. You will need to seed the database:**
+```
+npm run seed
+```
+**6. Finally to start node server you need to type the following command:**
+```
+npm start
+```
+**7. Open a browser to test using http://localhost:3001**
+
 ## Usage
 
 The usage of this project is to allow our group to turn this project in for grading to the MSU Bootcamp academic grading team.
