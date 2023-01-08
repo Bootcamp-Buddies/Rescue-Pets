@@ -142,6 +142,10 @@ body {
   text-align: center;
 }
 
+footer {
+    text-align: center;
+}
+
 .fa-paw:before {
   content: "\f1b0";
   position: relative;

@@ -1,12 +1,5 @@
-<div class="text-center">
-    <p>{{{get_emoji}}}</p>
-    <h1>{{pet_name}}</h1>
-    <h2>Age: {{age}}</h2>
-    <h2>Breed: {{breed}}</h2>
-    <h2>Gender: {{gender}}</h2>
-    <p>{{petDescription}}</p>
-    <p>Created by {{user.username}} on {{format_date date_created}}</p>
-    <p>
-        <button class="btn btn-primary">Adopt Pet</button>
-    </p>
-</div>
+<div id="banner"></div>
+
+<ul class="pet-list">
+    {{> pets-list-single pet}}
+</ul>
