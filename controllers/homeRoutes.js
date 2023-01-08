@@ -39,6 +39,7 @@ router.get('/signup', (req, res)=> {
   }
 });
 
+// Route for about page
 router.get('/about', (req, res) => {
   // If a session exists, redirect the request to the homepage
   // if (req.session.logged_in) {
@@ -60,7 +61,7 @@ router.get('/pets/:id', async (req, res) => {
       ]
     });
     const pet = dbPetData.get({ plain: true });
-    res.render('single-pet', {
+    res.render('pet', {
       pet,
       logged_in: req.session.logged_in,
       username: req.session.username

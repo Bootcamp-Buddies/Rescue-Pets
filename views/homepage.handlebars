@@ -1,6 +1,6 @@
-<div id="banner"></div>
+{{!-- <div id="banner"></div> --}}
 
-<div class="card btn btn-info">
+{{!-- <div class="card btn btn-info">
     <img src="./images/catdog.webp" class="card-img-top" />
     <div class="card-body">
         <h5 class="card-title"><i class="fa-solid fa-dog"></i> <i class="fa-solid fa-mars"></i> Oscar</h5>
@@ -9,7 +9,15 @@
         </p>
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
-</div>
+</div> --}}
+
+<ul class="pet-list">
+  {{#each pets as |pet|}}
+  <li>
+    {{> pets-list pet}}
+  </li>
+  {{/each}}
+</ul>
 
 {{!--
 <!-- Loop over each object in the projects array -->
