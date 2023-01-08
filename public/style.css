@@ -161,6 +161,12 @@ body {
   margin: 1vw 0vw 1vw 0vw;
 } */
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* 
 @media (min-width: 1025px) {
   .h-custom-2 {

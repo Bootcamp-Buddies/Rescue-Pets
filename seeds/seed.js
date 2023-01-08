@@ -13,8 +13,8 @@ const seedDatabase = async () => {
   });
 
   for (const pets of petData) {
-    await pet.create({
-      ...pet,
+    await Pets.create({
+      ...pets,
       //user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
