@@ -6,6 +6,11 @@
 
 ## Description
 
+In this project our team was tasked with building an application using the MVC process. We've built a pet adoption website where users can sign up for an account, view pets available for adoption, add pets to the database for others to adopt, and of course select pets to adopt themselves. This appplication was built using technologies such as handlebars, node and express js, mysql and sequelize, bcrypt, and other npm packages. The app is deployed to Heroku. See below for relevant links.
+
+[Github Repository](https://github.com/Bootcamp-Buddies/Rescue-Pets)<br>
+[Deployed Website]()
+
 ## Table of Contents
 
 - [Description](#description)
