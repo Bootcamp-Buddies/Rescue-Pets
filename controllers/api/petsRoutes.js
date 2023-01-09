@@ -82,19 +82,6 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-// Update a specific pet
-router.put('/:id', withAuth, async (req, res) => {
-  try {
-    const dbPetData = await Pets.update(req.body, {
-      where: {
-        id: req.params.id
-      }
-    });
-    res.status(200).json(dbPetData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 // Update (adopt) a specific pet
 router.put('/:id', withAuth, async (req, res) => {
@@ -109,7 +96,9 @@ router.put('/:id', withAuth, async (req, res) => {
     });
     res.status(200).json(dbPetData);
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
+
   }
 });
 
