@@ -138,14 +138,11 @@ body {
   display: flex;
 }
 
-.footer {
-  text-align: center;
-}
-
 footer {
   text-align: center;
-  margin-bottom: 2vw;
+  margin: 2vw;
 }
+
 
 .fa-paw:before {
   content: "\f1b0";

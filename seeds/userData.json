@@ -1,20 +1,24 @@
 [
   {
+    "user_id": "1",
     "username": "TJ",
     "email": "tj@gmail.com",
     "password": "password12345"
   },
   {
+    "user_id": "2",
     "username": "Stephen",
     "email": "stephen@gmail.com",
     "password": "password12345"
   },
   {
+    "user_id": "3",
     "username": "Jacob",
     "email": "jacob@gmail.com",
     "password": "password12345"
   },
   {
+    "user_id": "4",
     "username": "Yigit",
     "email": "yigit@gmail.com",
     "password": "password12345"
