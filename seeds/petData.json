@@ -1,6 +1,5 @@
 [
   {
-    "user_id": 1,
     "pet_name": "Oscar",
     "age": "4 months",
     "breed": "Golden Retriever",
@@ -9,30 +8,27 @@
     "description": "Meet Oscar! 4 months old Golden Retriever. Playful, friendly and outgoing. Favorite game is fetch."
   },
   {
-    "user_id": 2,
     "pet_name": "Mia",
     "age": "1 year",
     "breed": "British Shorthair",
     "type": "Cat",
     "gender": "Female",
-    "description": "Meet Mia! 1 year old British Shorthair. Calm, easygoing. Favorite game; catching fish on the tablet."
+    "description": "Meet Mia! 1 year old British Shorthair. Calm and easygoing. Favorite game is catching fish on the tablet."
   },
   {
-    "user_id": 3,
     "pet_name": "Murphy",
     "age": "7 months",
     "breed": "German Shephard",
     "type": "Dog",
     "gender": "Male",
-    "description": "Meet Murphy! 7 months old German Shephard. Energetic, intelligent. Favorite game; swimming."
+    "description": "Meet Murphy! 7 months old German Shephard. Energetic and intelligent. Favorite game is swimming."
   },{
-    "user_id": 4,
     "pet_name": "Buster",
     "age": "3 years",
     "breed": "Maine Coon",
     "type": "Cat",
     "gender": "Male",
-    "description": "Meet Buster! 3 years old Maine Coon. Social, talkative. Favorite game; playing with toilet paper roll."
+    "description": "Meet Buster! 3 years old Maine Coon. Social and talkative. Favorite game is playing with toilet paper roll."
   },{
     "pet_name": "Sully",
     "age": "13 years",
