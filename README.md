@@ -33,7 +33,7 @@ npm install
 ```
 **3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:**
 ```
-DB_NAME='techblog_db'
+DB_NAME='rescuepets_db'
 DB_USER=''
 DB_PASSWORD=''
 ```
@@ -51,6 +51,7 @@ npm run seed
 ```
 npm start
 ```
+
 **7. Open a browser to test using http://localhost:3001**
 
 ## Usage
