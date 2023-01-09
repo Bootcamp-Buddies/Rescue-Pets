@@ -1,19 +1,21 @@
 <div class="pet card btn btn-info">
     <img src="../images/coming-soon.png" class="card-img-top" />
     <div class="card-body">
-        <h1 class="card-title">{{get_emoji}} {{pet_name}}</h1>
+        <h1 class="card-title">{{get_emoji}} {{pet.pet_name}}</h1>
         <h4 class="card-text">
-            Pet Type: {{type}} <br>
-            Age: {{age}}  <br>
-            Breed: {{breed}} <br>
-            Gender: {{gender}}<br>
+            Pet Type: {{pet.type}} <br>
+            Age: {{pet.age}}  <br>
+            Breed: {{pet.breed}} <br>
+            Gender: {{pet.gender}}<br>
         </h4>
         <h4 class="card-text">
             <br>
-            {{description}}
+            {{pet.description}}
         </h4>
         <form class="form adopt-form">
+            {{#if logged_in}}
             <button class="btn btn-primary btn-lg btn-block" type="btn submit">Adopt {{pet_name}}</button>
+            {{/if}}
         </form>
     </div>
 </div>
