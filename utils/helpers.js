@@ -2,7 +2,7 @@ const Pets = require("../models/Pets");
 
 module.exports = {
     format_date: (date) => {
-        // Format date as MM/DD/YYYY
+        // Format date as MM/DD/YYYY to be used for pet cards
         return date.toLocaleDateString();
     },
     get_emoji: () => {

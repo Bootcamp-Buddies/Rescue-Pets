@@ -1,3 +1,4 @@
+//New pet adding handler in the profile page
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -26,6 +27,7 @@ const newFormHandler = async (event) => {
   }
 };
 
+//delete handler to remove the adopted pet from the list in the profile page
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
@@ -57,7 +59,7 @@ window.addEventListener('load', function () {
 });
 
 
-
+//event listeners adding pet and deleting from the list
 document
   .querySelector('.new-pet-form')
   .addEventListener('submit', newFormHandler);

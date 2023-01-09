@@ -1,3 +1,4 @@
+//event handler for signout function
 async function signout () {
     const response = await fetch('/api/users/logout', {
       method: 'POST',
@@ -11,5 +12,6 @@ async function signout () {
     }
   };
   
+  //event listener for clicking signout button
   document.querySelector('#signout').addEventListener('click', signout);
   

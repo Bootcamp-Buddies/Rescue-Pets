@@ -1,3 +1,4 @@
+//event handler for adopting the pets
 async function AdoptHandler(event) {
     event.preventDefault();
 
@@ -20,6 +21,7 @@ async function AdoptHandler(event) {
     }
   }
 
+  //event listener for adopting single pet
   document
   .querySelector('.adopt-form')
   .addEventListener('submit', AdoptHandler);

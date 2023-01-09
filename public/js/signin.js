@@ -1,3 +1,4 @@
+//event handler for sign in function
 async function signInFormHandler(event) {
     event.preventDefault();
   
@@ -22,6 +23,7 @@ async function signInFormHandler(event) {
     }
   };
 
+  //event listener for sign in button
   document
     .querySelector('.signin-form')
     .addEventListener('submit', signInFormHandler);
