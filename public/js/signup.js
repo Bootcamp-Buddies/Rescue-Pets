@@ -1,3 +1,4 @@
+//event handler for signing up
 async function signupFormHandler(event) {
     event.preventDefault();
   
@@ -20,6 +21,7 @@ async function signupFormHandler(event) {
     }
   };
   
+  //event listener for signing up button
   document
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);

@@ -4,6 +4,7 @@ const { User, Pets } = require('../models');
 const userData = require('./userData.json');
 const petData = require('./petData.json');
 
+//function for seeding the MySQL database
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 

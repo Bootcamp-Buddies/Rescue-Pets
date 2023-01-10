@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Pets, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 // Get all logged in pets for user, which will display on /dashboard page
 router.get('/', withAuth, async (req, res) => {
   try {
