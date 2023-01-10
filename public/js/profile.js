@@ -19,10 +19,11 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      alert('Pet Added');
-      document.location.replace('/profile');
+      swal("Complete", "Pet has been Added!", "success").then(() => {
+        document.location.replace('/profile');
+      });
     } else {
-      alert('Failed to create pet');
+      swal('Failed to create pet');
     }
   }
 };
@@ -39,7 +40,7 @@ const delButtonHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to delete pet');
+      swal('Failed to delete pet');
     }
   }
 };

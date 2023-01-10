@@ -8,7 +8,7 @@ async function signout () {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert(response.statusText);
+      swal(response.statusText);
     }
   };
   
